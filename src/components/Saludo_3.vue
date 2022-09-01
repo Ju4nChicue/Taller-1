@@ -1,4 +1,5 @@
 <template>
+  
   <h1>Saludo</h1>
 
   <input type="text" v-model="currentName"/>
@@ -7,7 +8,7 @@
   <button @click="newMessage" id="A" class="boton">Saludar</button>
 
   <p>{{answer}}</p>
-
+  
 </template>
 
 
@@ -52,4 +53,20 @@ export default {
 
 <style scoped>
 
+  h1{
+    color: skyblue;
+  }
+  input{
+    border-radius: 4px;
+  }
+
+  button{
+    background-color: gray;
+    color: white;
+  }
+  button:hover{
+    background-color: khaki;
+    color: black;
+    cursor: pointer;
+  }
 </style>

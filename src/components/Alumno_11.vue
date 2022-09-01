@@ -8,12 +8,16 @@
         <span>Nombre Materia: </span><input type="text" v-model="course" />
         <span>Nota Materia: </span><input id="nota" type="number" min="0" max="5" v-model="nota" />
         <button @click="addCourse">Añadir</button>
+        <button @click="deleteAll">Borrar Todo</button>
         </div>
 
-        <h2 class="alerta" v-if="name == null || course == null || nota == null">Llene todos los campos, por favor</h2>
+        <h2 class="alerta" v-if="(name == null || course == null || nota == null) && (info.length < 3)">Llene todos los campos, por favor</h2>
         <h2 class="alerta" v-if="nota != null && (nota < 1 || nota > 5)">Ingrese una nota ente 1 y 5 incluyendolos</h2>
 
+        <h2 class="alerta" v-if="info.length < 3">Despues de ingresar 3 materias, se moestrará el resultado</h2>
+
         <ul v-if="info.length == 3">
+            <p>{{name}}</p>
             <li v-for="(x) in info">
                 {{x}}
             </li>
@@ -51,6 +55,9 @@ export default {
                     this.nota = null;
                 }
             }
+    },
+    deleteAll(){
+        this.info = [];
     }
    }
 }
@@ -67,5 +74,8 @@ export default {
     }
     #nota{
         width: 40px;
+    }
+    ul{
+        top: 30px;
     }
 </style>

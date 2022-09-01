@@ -26,7 +26,7 @@
         name: 'Convertidor',
         data(){
                 return{
-                    segundos: 6340,
+                    segundos: null,
                     items: []
                 }
             }

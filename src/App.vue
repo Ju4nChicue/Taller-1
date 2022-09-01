@@ -16,6 +16,7 @@
     <Alumno v-if="pagina==11"/>
     <Objeto_Alumno v-if="pagina==12"/>
   </body>
+  
 </template>
 
 <script>

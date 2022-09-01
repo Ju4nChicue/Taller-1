@@ -68,4 +68,12 @@ export default {
     width: 270px;
     color: black;
   }
+  button{
+    background-color: yellowgreen;
+    color: black;
+  }
+  button:hover{
+    background-color:black;
+    color: white;
+  }
 </style>

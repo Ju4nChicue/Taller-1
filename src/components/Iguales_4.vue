@@ -69,6 +69,24 @@ export default {
 
 <style scoped>
     input{
-        width: 40px;
+        width: 50px;
     }
+    h1{
+        color: darkorange;
+    }
+    p{
+        color: aquamarine;
+    }
+    button{
+        border-radius: 5px;
+        border: 2px solid;
+        background-color: cadetblue;
+        color: white;
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
 </style>
