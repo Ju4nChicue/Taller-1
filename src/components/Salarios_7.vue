@@ -43,6 +43,7 @@ export default {
             else{
                 this.answer = 'No se pueden agregar más salarios (10 max)';
             }
+            this.salary = null;
         },
         showSalarys(){
             if(this.salarys.length == 10){
@@ -50,7 +51,7 @@ export default {
                 this.answer = '';
 
                 for(let i = 0; i < this.salarys.length; i++){
-                    this.answer += '$' + this.salarys[i] + ' aumentado 8% es: $' + this.salarys[i]*1.08 + '\n';
+                    this.answer += '$' + this.salarys[i] + ' aumentado 8% es: $' + (this.salarys[i]*1.08).toFixed(2) + '\n';
                 }
             }
             else{
@@ -74,5 +75,7 @@ export default {
     #area{
         position: relative;
         top: 20px;
+        resize: none;
+        width: 300px;
     }
 </style>

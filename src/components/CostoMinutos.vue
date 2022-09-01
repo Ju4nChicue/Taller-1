@@ -50,5 +50,7 @@ export default {
 </script>
 
 <style scoped>
-  
+  textarea{
+    resize: none;
+  }
 </style>
