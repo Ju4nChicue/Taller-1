@@ -1,15 +1,19 @@
 <template>
-  <h1>Calcular costo llamada</h1>
-
-  <p>Cuánto duró su llamada? (En minutos)</p>
-
-  <input type="number" v-model="minutos"/>
-   
-  <button @click="calcular" id="A" class="boton">Calcular</button>
+  <body>
     
-  <div>
-    <textarea readonly id="area" cols="30" rows="4" placeholder="Esperando orden..."></textarea>
-  </div>
+    <h1>Calcular costo llamada</h1>
+
+    <p>Cuánto duró su llamada? (En minutos)</p>
+
+    <input type="number" v-model="minutos"/>
+    
+    <button @click="calcular" id="A" class="boton">Calcular</button>
+      
+    <div>
+      <textarea readonly id="area" cols="30" rows="4" placeholder="Esperando orden..."></textarea>
+    </div>
+
+  </body>
 
 </template>
 
@@ -52,5 +56,16 @@ export default {
 <style scoped>
   textarea{
     resize: none;
+  }
+  h1{
+    color:darkgoldenrod;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  p{
+    background-color: cornsilk;
+    border-radius:5px;
+    width: 270px;
+    color: black;
   }
 </style>

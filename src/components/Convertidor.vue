@@ -1,15 +1,17 @@
 <template>
+    <body>
+        
+        <h1> {{title}} </h1>
+        
+        <input type="number" v-model="segundos"/>
     
-    <h1> {{title}} </h1>
+        <button @click="convertir" id="A" class="boton">Convertir</button>
+        
+        <div>
+            <textarea readonly id="area" cols="30" rows="4" placeholder="Esperando orden..."></textarea>
+        </div>
     
-    <input type="number" v-model="segundos"/>
-   
-    <button @click="convertir" id="A" class="boton">Convertir</button>
-    
-    <div>
-        <textarea readonly id="area" cols="30" rows="4" placeholder="Esperando orden..."></textarea>
-    </div>
-    
+    </body>
 </template>
 
 
