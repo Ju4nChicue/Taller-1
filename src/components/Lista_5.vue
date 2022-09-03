@@ -45,6 +45,32 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+    h1{
+        color: aquamarine;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    input{
+        border-color: red;
+        border-style:double;
+        border-radius: 5px;
+    }
+    button{
+        border-radius: 6px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: aqua;
+    }
+    span{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
     
 </style>

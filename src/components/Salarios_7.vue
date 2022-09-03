@@ -5,12 +5,12 @@
     <p>Ingrese 10 salarios</p>
 
     <span>Salario: </span><input type="number" v-model="salary" min="0" />
-    <button @click="addSalary">Ingresar</button>
+    <button @click="addSalary" id="agregar">Ingresar</button>
 
-    <button @click="deleteSalarys">Borrar todo</button>
+    <button @click="deleteSalarys" id="borrar">Borrar todo</button>
 
     <div>
-        <button @click="showSalarys" id="borrar">Mostrar todos</button>
+        <button @click="showSalarys" id="mostrar">Mostrar todos</button>
     </div>
 
     <textarea readonly id="area" cols="30" rows="10">{{answer}}</textarea>
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-    #borrar{
+    #mostrar{
         position: relative;
         top: 10px;
     }
@@ -78,4 +78,33 @@ export default {
         resize: none;
         width: 300px;
     }
+    h1{
+        color: deepskyblue;
+        font-family: fantasy;
+    }
+    p, span{
+        color: beige;
+        font-family:Georgia;
+    }
+    button{
+        background-color: gray;
+        color: white;
+        border-radius: 5px;
+    }
+    button:hover{
+        cursor: pointer;
+        color: black;
+    }
+    #agregar:hover{
+        background-color: greenyellow;
+    }
+    #borrar:hover{
+        background-color: red;
+    }
+    textarea{
+        border-radius: 5px;
+        font-family: Impact;
+        border: 3px solid red;
+    }
+    
 </style>

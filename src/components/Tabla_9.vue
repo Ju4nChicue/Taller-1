@@ -29,7 +29,6 @@ export default {
 </script>
 
 <style scoped>
-   
    .num{
     width: 40px;
    }
@@ -43,6 +42,16 @@ export default {
 
    td, tr{
     border: 1px solid black;
+   }
+
+   h1{
+    color: rgba(0, 255, 255, 0.747);
+    font-style: oblique;
+    font-family: cursive
+   }
+   span{
+    color: rgba(245, 245, 220, 0.822);
+    font-family: fantasy;
    }
    
 </style>

@@ -69,10 +69,35 @@ export default {
 }
 </script>
 <style scoped>
+    h1{
+        color: firebrick;
+        font-family: 'Franklin Gothic Medium';
+    }
+    input{
+        border-radius: 5px;
+        width: 70px;
+    }
+    button{
+        background-color: darkgray;
+        color: white;
+        border-radius: 5px;
+        border-style: double;
+    }
+    button:hover{
+        cursor: pointer;
+        border-color: red;
+    }
     #bGenerar{
         top: 10px;
     }
     #tabla{
         top: 20px;
+    }
+    p{
+        color: rgb(108, 108, 184);
+    }
+    span{
+        color: burlywood;
+        font-family: 'Trebuchet MS';
     }
 </style>
