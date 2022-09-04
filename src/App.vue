@@ -12,7 +12,7 @@
     <Salarios v-if="pagina==7"/>
     <Indice v-if="pagina==8"/>
     <Tabla v-if="pagina==9"/>
-    <!--<Suma_Matriz v-if="pagina==10"/> PENDIENTE-->
+    <Suma_Matriz v-if="pagina==10"/>
     <Alumno v-if="pagina==11"/>
     <Objeto_Alumno v-if="pagina==12"/>
   </body>
